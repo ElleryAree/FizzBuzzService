@@ -13,6 +13,8 @@ public class FizzController {
 
     @Autowired
     public FizzController(FizzBuzzService fizzBuzzService) {
+        // Actually, it's better to have an interface here,
+        // so it can be easily mocked, but for such a trivial service it doesn't make sense.
         this.fizzBuzzService = fizzBuzzService;
     }
 
