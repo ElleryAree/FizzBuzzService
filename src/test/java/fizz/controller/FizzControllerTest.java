@@ -22,7 +22,7 @@ public class FizzControllerTest {
 
     @BeforeEach
     void setup() {
-        var fizzBuzzService = new FizzBuzzService();
+        FizzBuzzService fizzBuzzService = new FizzBuzzService();
 
         this.mvc = MockMvcBuilders.standaloneSetup(new FizzController(fizzBuzzService)).build();
     }

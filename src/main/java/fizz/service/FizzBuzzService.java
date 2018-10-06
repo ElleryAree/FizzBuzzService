@@ -5,8 +5,8 @@ import org.springframework.stereotype.Component;
 @Component
 public class FizzBuzzService {
     public String getFizzBuzz(int number) {
-        var fizz = number % 3 == 0;
-        var buzz = number % 5 == 0;
+        boolean fizz = number % 3 == 0;
+        boolean buzz = number % 5 == 0;
 
         if (fizz && buzz) {
             return "FizzBuzz";
