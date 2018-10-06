@@ -1,0 +1,7 @@
+.last-column {
+  width: 100%;
+}
+
+.number-container {
+  overflow: scroll;
+}
